@@ -1,7 +1,7 @@
 <template>
     <div class="libstoreContainer">
         <div class="heading">
-            <h2 id="title"> Lib Store</h2>
+            <h2 id="title">Lib Store</h2>
             <add-book-form
                  v-on:reloadlist="getList()"
             />

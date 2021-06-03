@@ -3,7 +3,6 @@
         <input
             type="checkbox"
             @change="updateCheck()"
-            v-model="book.completed"
             />
             <span :class="[book.completed ? 'completed' : '', 'bookText']">{{book.book_name}}</span>
             <button @click="removeBook()" class="trashcan">
@@ -46,7 +45,7 @@
 
 <style scoped>
 .completed {
-    text-decoration: line-through;
+    /*text-decoration: line-through;*/
     color: #999999;
 }
 .bookText {
